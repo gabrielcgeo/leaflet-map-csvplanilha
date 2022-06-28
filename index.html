@@ -69,10 +69,7 @@
 
       var marker = L.marker([row.Latitude, row.Longitude], {
         opacity: 1
-     icon: L.icon({
-        iconUrl: 'https://cdn.icon-icons.com/icons2/3299/PNG/512/water_treatment_drop_icon_208836.png',
-    iconSize: [40, 60]
-  })
+    
 }).bindPopup(row.Title);
       
       marker.addTo(map);
