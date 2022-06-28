@@ -69,7 +69,12 @@
 
       var marker = L.marker([row.Latitude, row.Longitude], {
         opacity: 1
-      }).bindPopup(row.Title);
+     icon: L.icon({
+   //pata mudar o icone basta subir o incone na pasta e colar o caminho dele abaixo
+        iconUrl: 'leaflet-map-csvplanilha/blob/main/leaflet-map-csv.png',
+    iconSize: [40, 60]
+  })
+}).bindPopup(row.Title);
       
       marker.addTo(map);
     }
